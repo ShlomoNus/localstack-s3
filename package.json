@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "docker:up": "docker compose -f docker-compose.yml up",
     "s3:create": "tsx scripts/s3-create.ts",
     "s3:create-base": "npm run s3:create -- base",
     "s3:list": "tsx scripts/s3-list.ts",
